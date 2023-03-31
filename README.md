@@ -1,4 +1,4 @@
-# TV Show Tracker
+# TV Show Tracker Aanandita/Giorgio
 
 ## Description:
 Create a TypeScript application for Smart TVs that helps users track their favorite TV shows. The application will allow users to add, remove, and view details of the TV shows they follow, as well as filter shows based on genre and search for specific shows. Use TypeScript features like type annotations, interfaces, and enums to enhance code readability and maintainability.
