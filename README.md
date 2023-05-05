@@ -3,7 +3,22 @@
 ## Description:
 Create a TypeScript application for Smart TVs that helps users track their favorite TV shows. The application will allow users to add, remove, and view details of the TV shows they follow, as well as filter shows based on genre and search for specific shows. Use TypeScript features like type annotations, interfaces, and enums to enhance code readability and maintainability.
 
-## Requirements:
+## Requirements for Generics and Utilities
+
+
+### Sorting the TV Shows
+- Implement a "compare" function using generics that accepts two objects of the same type and a property key to compare. The function should return -1, 0, or 1 depending on whether the first object's property is less than, equal to, or greater than the second object's property.
+
+- Update the "displayShows" function to accept an optional sorting option. This option should be an object with two properties: "key" (a string representing the property key) and "order" (either "asc" or "desc" for ascending or descending order). Use the generic "compare" function to sort the list of TV shows based on the sorting option.
+
+- Add elements to your User Interface to allow sorting the TV Shows
+
+### Updating TV Shows
+- Create a custom utility type named "TVShowUpdate" that allows only the "rating" and "status" properties of the "TVShow" class to be updated using the "Pick" utility.
+
+--- 
+
+## Requirements for Functions and Classes:
 
 Your code should follow Fx's Coding standards and include unit tests for the features that are mentioned here.
 
