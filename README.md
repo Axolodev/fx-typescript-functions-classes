@@ -7,14 +7,23 @@ Create a TypeScript application for Smart TVs that helps users track their favor
 
 
 ### Sorting the TV Shows
-- Implement a "compare" function using generics that accepts two objects of the same type and a property key to compare. The function should return -1, 0, or 1 depending on whether the first object's property is less than, equal to, or greater than the second object's property.
+- Implement a "compare" function using generics that accepts two objects of the same type and a property key to compare. The key property should only allow elements that exist within the object. The function should return -1, 0, or 1 depending on whether the first object's property is less than, equal to, or greater than the second object's property, respectively. 
 
 - Update the "displayShows" function to accept an optional sorting option. This option should be an object with two properties: "key" (a string representing the property key) and "order" (either "asc" or "desc" for ascending or descending order). Use the generic "compare" function to sort the list of TV shows based on the sorting option.
+
+- Create a utility called "ValidSortingKey" that validates the sorting key used in both functions. This utility should ensure that the sorting key provided is a valid property of the TVShow class and that it's appropriate for sorting purposes.
 
 - Add elements to your User Interface to allow sorting the TV Shows
 
 ### Updating TV Shows
-- Create a custom utility type named "TVShowUpdate" that allows only the "rating" and "status" properties of the "TVShow" class to be updated using the "Pick" utility.
+
+- Implement a flexible update function that allows users to partially update specific details of a TV show, such as its title, genre, rating, status, or airing date. You can use a [predefined TypeScript utility](https://www.typescriptlang.org/docs/handbook/utility-types.html) or create your own.
+
+- Create a utility called "AllowedUpdates" that specifies which properties of the TVShow class can be updated by the user. This utility should help prevent unauthorized changes to certain properties the user cannot edit.
+
+- Extend the user interface to include an "Edit Show" option, allowing users to update the details of TV shows in their list.
+
+
 
 --- 
 
